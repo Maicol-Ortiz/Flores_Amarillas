@@ -43,13 +43,17 @@ body {
   margin-bottom: 180px;
   font-family: "Arial Narrow", Arial, sans-serif;
   color: yellow;
-  position: absolute;
+  position: absolute; /* ya lo tienes */
+  z-index: 10;        /* agrega esto para que esté arriba de las flores */
   font-weight: bold;
   letter-spacing: 10px;
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
   text-align: center;
+  left: 50%;          /* centra horizontalmente */
+  transform: translateX(-50%); /* centra exacto */
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
